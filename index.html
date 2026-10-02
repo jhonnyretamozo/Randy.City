@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="icono.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Randy.City</title>
+</head>
+<body class="home-bg">
+
+<div id="appRoot">
+
+  <div id="loginPanel" aria-hidden="true">
+    <div class="login-card" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+      <div class="login-head">
+        <h2 id="loginTitle">Este sitio es para adultos</h2>
+        <p class="login-description">este sitio web contiene contenido inlicito a si que todo auequel<br>
+            que quiera entrar sera rastreado por la sia<br>
+            asi que piensalo bien bro no es<br>
+            cualquier cosa bro</p>
+      </div>
+      <div class="login-buttons">
+        <button id="loginSubmit" type="button">tengo 18 años o mas - entrar</button>
+        <button id="closeLogin" type="button">soy menor de 18 años - salir</button>
+
+      </div>
+    </div>
+  </div>
+
+  <p class="subtitle" id="subtitleText"><strong>Randy.City</strong></p>
+
+  <!-- ===== HOME: selección de nivel ===== -->
+  <div id="levelSelect">
+    <button class="level-card lvl-1" data-level="1">
+      <span class="lvl-num">1</span>
+      <span class="lvl-label">Nivel UCV</span>
+      <span class="lvl-stars"></span>
+    </button>
+    <button class="level-card lvl-2" data-level="2">
+      <span class="lvl-num">2</span>
+      <span class="lvl-label">Nivel Pollito</span>
+      <span class="lvl-stars"></span>
+    </button>
+    <button class="level-card lvl-3" data-level="3">
+      <span class="lvl-num">3</span>
+      <span class="lvl-label">Tienes poder</span>
+      <span class="lvl-stars"></span>
+    </button>
+    <button class="level-card lvl-4" data-level="4">
+      <span class="lvl-num">4</span>
+      <span class="lvl-label">Hardcore</span>
+      <span class="lvl-stars"></span>
+    </button>
+    <button class="level-card lvl-5" data-level="5">
+      <span class="lvl-num">5</span>
+      <span class="lvl-label">Nivel Coar</span>
+      <span class="lvl-stars"></span>
+    </button>
+  </div>
+
+  <!-- ===== JUEGO ===== -->
+  <div id="gameScreen" class="hidden">
+    <div id="canvasWrap">
+      <canvas id="gameCanvas" width="900" height="320"></canvas>
+    </div>
+
+    <div id="hearts">❤️❤️❤️</div>
+
+    <div id="controls">
+      <div class="dpad">
+        <div class="row"><button id="btnLeft">👈🏾</button><button id="btnRight">👉🏾</button></div>
+      </div>
+      <button id="btnJump">👆</button>
+    </div>
+
+    <button id="btnMusic" style="margin-top:10px;padding:8px 18px;border:none;border-radius:8px;background:#1e293b;color:white;font-weight:bold;cursor:pointer;">🔇 Activar música</button>
+  </div>
+
+  <div id="winOverlay">
+    <h2>pasate</h2>
+    <p>Has ganado: <strong>tu diploma</strong></p>
+    <button id="btnRestart">Jugar de nuevo</button>
+    <button id="btnMenuFromWin" class="btn-secondary"> Elegir nivel</button>
+  </div>
+
+  <div id="loseOverlay">
+    <h2>Pediste, que nub</h2>
+    <p id="loseMsg">Inténtalo de nuevo</p>
+    <button id="btnRetry">Reintentar</button>
+    <button id="btnMenuFromLose" class="btn-secondary">Otro nivel</button>
+  </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>p
